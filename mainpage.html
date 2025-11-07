@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/cat2.ico" type="images/x-icon" />
+    <title>태윤이 페이지</title>
+    <link rel="stylesheet" href="./intro.css" />
+    
+  </head>
+  <body>
+    <header>
+      <h1>
+        <a href="./mainpage.html" class="mainpage-maintitle">My Website</a>
+      </h1>
+      <p class="mainpage-subtitle">이태윤 마이페이지</p>
+      </div>
+    </header>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="./profile.html">이력</a></li>
+        <li><a href="./contract.html">연락처</a></li>
+        <li><a href="./project.html">프로젝트</a></li>
+        <li><a href="./photo-gallary.html">갤러리</a></li>
+      </ul>
+    </nav>
+    <div class="carousel">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="./images/cat1.jpg" alt="img1" />
+        </div>
+        <div class="slide">
+          <img src="./images/cat2.jpg" alt="img2" />
+        </div>
+        <div class="slide">
+          <img src="./images/cat3.jpg" alt="img3" />
+        </div>
+        <div class="slide">
+          <img src="./images/cat4.jpg" alt="img4" />
+        </div>
+      </div>
+      <div class="buttons">
+        <button onclick="prevSlide()">〈</button>
+        <button onclick="nextSlide()">〉</button>
+      </div>
+    </div>
+
+    <script src="./carousel.js"></script>
+    <div class="image-grid" id="imageContainer"></div>
+    <script src="./imageLoader.js"></script>
+
+    <article class="intro-container">
+        <h2 class="intro-title">인사말</h2>
+        <p>별 볼일 없는 제 사이트에 와주셔서 감사하고,,</p>
+        <p>많이 잘하지는 못하지만 다같이 열심히 해봐용~!</p>
+        <p>사진에 나오는 고양이는 저희집 쥔님 이소망이에요 ㅎㅎ</p>
+    </article>
+
+    <footer>
+      <p>Copyright &copy; 2025 My Website</p>
+    </footer>
+
+    <button id="topBtn" title="위로가기">▲</button>
+
+    <script src="./topbtn.js"></script>
+  </body>
+</html>

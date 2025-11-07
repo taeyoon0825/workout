@@ -1,0 +1,549 @@
+@font-face {
+  font-family: "KnpsOdaesan";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/KNPSOdaesan-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: rgb(188, 241, 157);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 전체 콘텐츠를 가운데로 */
+  text-align: center;
+  font-size: 25px;
+}
+
+.max-container {
+  padding: 4rem;
+  text-align: center;
+  max-width: var(--size-max-width);
+  margin: auto;
+}
+
+.mainpage-maintitle {
+  color: inherit;
+  text-decoration: none;
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 전체 콘텐츠를 가운데로 */
+  text-align: center;
+}
+
+.mainpage-subtitle {
+  align-items: center; /* 세로 중앙 정렬 */
+  justify-content: center; /* 전체 콘텐츠를 가운데로 */
+  text-align: center;
+}
+
+nav {
+  background-color: #555;
+  color: white;
+  font-size: 24px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+body {
+  font-family: KnpsOdaesan;
+  line-height: 1.6;
+  white-space: normal;
+  min-height: 100vh;
+}
+
+.carousel {
+  position: relative;
+  width: 1200px;
+  height: 700px;
+  overflow: hidden;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  height: 300px;
+}
+
+.slide img {
+  width: 100%;
+  height: 250%;
+  object-fit: cover;
+}
+
+.buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.buttons button {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.intro-container {
+  text-align: center;
+}
+
+.intro-title {
+  font-size: 54px;
+}
+
+.intro-container p {
+  font-size: 32px;
+}
+
+#profile-text,
+#contract-information,
+#project-end,
+#photo-gallary {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* 사진과 텍스트 사이 여백 */
+  margin: 80px auto;
+  max-width: 1000px;
+}
+
+.profile-image {
+  width: 300px; /* 사진 박스 크기 */
+  height: 450px;
+  background-color: #845c5c; /* 배경색 (임시용) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-text {
+  flex: 1;
+  background-color: #b5c9a4; /* 연한 초록색 */
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.profile-text h2 {
+  margin-bottom: 10px;
+}
+
+.profile-text p {
+  margin-bottom: 20px;
+}
+
+.majors {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+
+.major {
+  width: 30%;
+  background-color: #b5c9a4;
+  padding: 2rem 1rem;
+  color: white;
+  border-radius: 1rem;
+  cursor: default;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.4);
+}
+
+.major__icon {
+  font-size: 4rem; /* 아이콘은 글자화 되어 있음 */
+  margin: 1rem 0;
+  color: rgb(50, 95, 44);
+  transition: all 300ms ease;
+}
+
+.major:hover .major__icon {
+  transform: rotate(-15deg) scale(1.2);
+}
+
+.major__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.contract-container {
+  display: flex;
+  background-color: #b5c9a4;
+  justify-content: center;
+  color: white;
+  gap: 100px; /* 사진과 텍스트 사이 여백 */
+  margin: 80px auto;
+  border-radius: 15px;
+  max-width: 1000px;
+  margin-bottom: 30vh;
+}
+
+#contract1,
+#contract2,
+#contract3 {
+  padding-top: 20px;
+}
+
+#contract1 {
+  margin-left: 20px;
+  justify-content: flex-start;
+}
+
+#contract3 {
+  margin-left: 25px;
+}
+
+#phonenumber {
+  font-size: 16px;
+  padding-top: 55px;
+}
+
+#instagram-logo {
+  height: 100px;
+  width: 100px;
+}
+
+#instagram-id {
+  margin-left: 20px;
+}
+
+#instagram-id:active {
+  color: white;
+}
+
+#notion-logo {
+  height: 100px;
+  width: 100px;
+}
+
+#notion-id {
+  margin-left: 10px;
+}
+
+.project-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px; /* 두 프로젝트 간 간격 */
+  flex-wrap: wrap; /* 화면이 작아질 경우 아래로 줄바꿈 */
+  padding: 20px;
+}
+
+.project-container article {
+  width: 45%; /* 두 개를 나란히 배치 */
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-container article:hover {
+  transform: translateY(-5px);
+}
+
+.project-container article img {
+  width: 100%;
+  height: 300px; /* 고정된 높이로 통일 */
+  object-fit: cover; /* 가로/세로 비율 유지하면서 꽉 채움 */
+  display: block;
+}
+
+.project-container h2 {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0 10px;
+  font-size: 1.8rem;
+  color: #000000;
+}
+
+.project-container p {
+  padding: 15px;
+  color: #000000;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.photo-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2열 */
+  grid-template-rows: auto auto auto; /* 3행 */
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 각 이미지 공통 스타일 */
+.photo-container img {
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* 5번 이미지를 중앙에 배치 */
+#img-5 {
+  grid-column: 1 / 3; /* 두 열 모두 차지 */
+  display: flex;
+  justify-content: center;
+}
+
+#img-5 img {
+  width: 670px; /* 가로 넓힘 */
+  height: 350px; /* 세로는 동일 */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#topBtn {
+  display: none; /* 기본적으로 숨김 */
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#topBtn:hover {
+  background-color: #333;
+  scale: 1.2;
+}
+
+/* 반응형 세트 추가 */
+
+@media (max-width: 1024px) {
+  .nav-bar {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .carousel {
+    width: 90%;
+    height: 500px;
+  }
+
+  .slide img {
+    width: 100%;
+    height: 150%;
+    object-fit: cover; /* 잘리지 않게 전체 표시 */
+  }
+
+  .photo-container img {
+    width: 200px;
+    height: 300px;
+  }
+
+  #img-5 img {
+    width: 500px;
+    height: 300px;
+  }
+
+  .project-container article {
+    width: 80%;
+  }
+
+  .contract-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  #contract1,
+  #contract2,
+  #contract3 {
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  #instagram-id {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .profile-image {
+    width: 80%;
+    height: auto;
+  }
+
+  .profile-text {
+    width: 85%;
+    text-align: center;
+  }
+
+  .photo-container {
+    grid-template-columns: 1fr; /* 한 줄씩 */
+  }
+
+  .photo-container img {
+    width: 80%;
+    height: auto;
+  }
+
+  #contract1,
+  #contract2,
+  #contract3 {
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+
+  #notion-id {
+    text-align: center;
+  }
+
+  #instagram-id {
+    margin-right: 20px;
+  }
+
+  #img-5 {
+    grid-column: auto;
+  }
+
+  #img-5 img {
+    width: 90%;
+    height: auto;
+  }
+
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-container article {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+  }
+  .nav-bar {
+    text-align: center;
+    justify-content: center;
+  }
+
+  nav {
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  #profile-text,
+  #contract-information,
+  #project-end,
+  #photo-gallary {
+    font-size: 28px;
+  }
+
+  .carousel {
+    width: 100%;
+    height: 350px;
+  }
+
+  .photo-container img {
+    width: 90%;
+    height: auto;
+  }
+
+  #img-5 img {
+    width: 95%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-image,
+  .profile-text {
+    width: 90%;
+    height: auto;
+  }
+}
